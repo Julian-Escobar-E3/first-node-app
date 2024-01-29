@@ -24,9 +24,7 @@ app.get('/api/getall',(req:Request,res:Response)=>{res.status(200).json(data)});
 //GET BY ID
 app.get('/api/getByID/:id',(req:Request,res:Response)=>{
 	const id=parseInt(req.params.id);
-	//console.log('===>'+id);
 	const item = data.find((item)=>item.idecita===id);
-	console.log({item});
 	if(item){
 	res.status(200).json(item);
 	}else{
@@ -41,7 +39,7 @@ app.post('/api/create',(req:Request,res:Response)=>{
 	res.status(201).json(newItem);
 });
 
-//PUT/PATCH
+//PUT
 app.put('/api/update/:id',(req:Request,res:Response)=>{
 	const id=parseInt(req.params.id,10);
 	const updatedItem = req.body;

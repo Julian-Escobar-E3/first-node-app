@@ -12,7 +12,7 @@ npm run dev:ts
 ```
 
 4. Realizar una peticion HTTP
-     En mi caso realizare las peticiònes a traves de HTTPie :
+     En mi caso realizare las peticiònes a traves de [HTTPie](https://httpie.io/) :
     - Main 
         ```shell
         http GET http:localhost:3000/
